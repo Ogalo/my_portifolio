@@ -1,5 +1,4 @@
 import {
-  AppBar,
   Box,
   Toolbar,
   IconButton,
@@ -117,7 +116,15 @@ function NavBar() {
             ))}
           </Box>
 
-          <Box sx={{ flexGrow: 0 }}></Box>
+          <Box sx={{ flexGrow: 0 }}>
+          <Button
+          variant="contained"
+          href="#contained-buttons"
+          sx={{ ml: '5px'}}
+          >Contact Me
+          </Button>
+
+          </Box>
         </Toolbar>
       </Container>
     </Box>
