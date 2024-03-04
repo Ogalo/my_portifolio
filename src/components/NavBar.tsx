@@ -36,17 +36,18 @@ function NavBar() {
 
   return (
     <Box position="static">
-      <Container maxWidth="xl">
+      <Container maxWidth="xl" sx={{justifyContent: 'space-around'}}>
         <Toolbar disableGutters>
           <Typography
-            variant="h6"
+            variant="h1"
             noWrap
             component="a"
             href="#app-bar-with-responsive-menu"
             sx={{
-              mr: 50,
+              mr: "530px",
               display: { xs: "none", md: "flex" },
               textDecoration: "none",
+              padding: 2,
             }}
           >
             <img src={Logo} alt="Logo" width="80 px" height="55 px" />
