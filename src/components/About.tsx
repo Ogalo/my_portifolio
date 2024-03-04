@@ -3,7 +3,7 @@ import { Box, Typography, Stack, Button } from "@mui/material";
 const About = () => {
   return (
     <Box
-      sx={{ alignItems: "center", boxShadow: 3, mx: 10 }}
+      sx={{ alignItems: "center", boxShadow: 3, mx: 10, px: 5 }}
       mt={8}
 
     >
@@ -36,7 +36,7 @@ const About = () => {
           exceptional results.
         </Typography>
       </Typography>
-      <Box sx={{mt: 3, }}>
+      <Box sx={{mt: 3, display: 'flex', flexWrap: 'wrap', }}>
 
       <Button
       variant="contained" href="#contained-buttons"
