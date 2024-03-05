@@ -37,7 +37,7 @@ const About = () => {
           exceptional results.
         </Typography>
       </Typography>
-      <Box sx={{mt: 3, display: 'flex', flexWrap: 'wrap', }}>
+      <Box sx={{mt: 3, display: 'flex', flexWrap: 'wrap', pb: 3 }}>
 
       <Button
       variant="contained" href="#contained-buttons"
