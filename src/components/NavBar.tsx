@@ -38,15 +38,16 @@ function NavBar() {
   return (
     <Box position="static" >
       <Container maxWidth="xl" >
-        <Toolbar disableGutters sx={{mx: 5}}>
+        <Toolbar disableGutters sx={{mx: 4,}}>
           <Stack
             component="a"
             href="#app-bar-with-responsive-menu"
             sx={{
-              mr: '550px',
+              mr: '650px',
               display: { xs: "none", md: "flex" },
               textDecoration: "none",
               px: 3,
+              gap: 12,
 
             }}
             >
@@ -119,12 +120,7 @@ function NavBar() {
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
-          <Button
-          variant="contained"
-          href="#contained-buttons"
-          sx={{ ml: '5px'}}
-          >Contact Me
-          </Button>
+
 
           </Box>
         </Toolbar>

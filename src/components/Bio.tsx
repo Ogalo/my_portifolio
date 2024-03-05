@@ -5,11 +5,11 @@ import Profile from '../assests/Profile.png'
 const Bio = () => {
   return (
     <Box mt={5}>
-      <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 26, justifyContent: 'space-evenly', }}>
+      <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 6, justifyContent: 'space-evenly', }}>
         <Box>
 
       <Stack mt={5}>
-        <Typography variant='h3' color="#cec5c5" fontFamily = "karma"> I'm a </Typography>
+        <Typography variant='h3' color="#cec5c5" fontFamily = "karma"> I'm Harrison </Typography>
       </Stack>
       <Stack mt={4}>
         <Typography variant='h4' fontFamily = "karma">FULL-STACK WEB SOFTWARE </Typography>
@@ -25,6 +25,7 @@ const Bio = () => {
       <Stack
         sx={{
           maxWidth: '330px',
+          mt: 3,
 
 
         }}

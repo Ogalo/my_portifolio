@@ -12,7 +12,7 @@ const About = () => {
           About Me
       </Typography>
       <Typography sx={{ mt: 3, fontFamily: "karma" }}>
-        <Typography>
+        <Typography fontFamily='karma'>
           I have 4 years of versatile experience spanning Web development,
           UI-UX design, AI data training and Underwriting, I bring a
           comprehensive skill set to the table. Proficient in full-stack web
@@ -21,7 +21,7 @@ const About = () => {
           expertise extends to risk assessment and policy analysis within the
           underwriting sector.
         </Typography>
-        <Typography>
+        <Typography fontFamily='karma'>
           I excel in crafting responsive, user-friendly web applications and
           compelling designs while executing effective underwriting strategies.
           Equipped with a breadth of programming languages, I design engaging
@@ -29,7 +29,7 @@ const About = () => {
           strengths lie in analytical thinking, problem-solving, and
           interpersonal communication.
         </Typography>
-        <Typography>
+        <Typography fontFamily='karma'>
           Furthermore, I thrive in collaborative environments, effortlessly
           bridging diverse functions. Committed to remaining abreast of industry
           trends and cutting-edge technologies in software development, design,
