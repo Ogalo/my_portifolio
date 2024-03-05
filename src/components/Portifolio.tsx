@@ -1,5 +1,6 @@
 import React from 'react'
 import { Box, Typography, Stack, Button } from '@mui/material'
+import ProjectCard from './ProjectCard';
 
 
 const Portifolio = () => {
@@ -28,6 +29,7 @@ const Portifolio = () => {
               </Button>
             ))}
           </Box>
+          <ProjectCard />
     </Box>
   )
 }
