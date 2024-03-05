@@ -3,6 +3,7 @@ import { Box, Typography, Stack, Button } from "@mui/material";
 const About = () => {
   return (
     <Box
+    maxWidth="xl"
       sx={{ alignItems: "center", boxShadow: 3, mx: 10, px: 5 }}
       mt={8}
 

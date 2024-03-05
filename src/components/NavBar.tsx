@@ -8,6 +8,7 @@ import {
   Button,
   Tooltip,
   MenuItem,
+  Stack,
 } from "@mui/material";
 import { useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
@@ -35,23 +36,23 @@ function NavBar() {
   };
 
   return (
-    <Box position="static">
-      <Container maxWidth="xl" sx={{justifyContent: 'space-around'}}>
-        <Toolbar disableGutters>
-          <Typography
-            variant="h1"
-            noWrap
+    <Box position="static" >
+      <Container maxWidth="xl" >
+        <Toolbar disableGutters sx={{mx: 5}}>
+          <Stack
             component="a"
             href="#app-bar-with-responsive-menu"
             sx={{
-              mr: "530px",
+              mr: '550px',
               display: { xs: "none", md: "flex" },
               textDecoration: "none",
-              padding: 2,
+              px: 3,
+
             }}
-          >
+            >
             <img src={Logo} alt="Logo" width="80 px" height="55 px" />
-          </Typography>
+
+          </Stack>
 
           <Box
             sx={{

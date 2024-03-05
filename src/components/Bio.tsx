@@ -5,7 +5,7 @@ import Profile from '../assests/Profile.png'
 const Bio = () => {
   return (
     <Box mt={5}>
-      <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 12, justifyContent: 'space-evenly'}}>
+      <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 26, justifyContent: 'space-evenly', }}>
         <Box>
 
       <Stack mt={5}>
