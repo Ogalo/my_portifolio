@@ -4,7 +4,7 @@ const About = () => {
   return (
     <Box
     maxWidth="xl"
-      sx={{ alignItems: "center", boxShadow: 3, mx: 5, px: 5 }}
+      sx={{ alignItems: "center", boxShadow: 4, mx: 5, px: 5 }}
       mt={8}
 
     >

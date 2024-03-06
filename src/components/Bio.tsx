@@ -26,7 +26,7 @@ const Bio = () => {
     gap={0.5}
     my={5}
     mx={5}
-    p={4}
+    py={4}
     >
 
         <Box
@@ -54,15 +54,15 @@ const Bio = () => {
 
           </Stack>
           <Stack my={2} py={2}>
-          <Button sx={{width:'180px', ml: -1,}} variant="contained" href="#contained-buttons">
+          <Button sx={{width:'180px', ml: 0,}} variant="contained" href="#contained-buttons">
             Get to Know me
           </Button>
           </Stack>
         </Box>
 
         <Box
-          mt={-2}
-          ml={-2}
+          mt={1}
+          mr={2}
           sx={{
             maxWidth: "350px",
           }}
