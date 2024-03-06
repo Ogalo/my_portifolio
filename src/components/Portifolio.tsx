@@ -10,18 +10,18 @@ const Portifolio = () => {
 
 
   return (
-    <Box mt={5}>
-      <Typography variant='h5' fontFamily='karma' textAlign='center'>Projects</Typography>
-      <Box sx={{ display: "flex", flexWrap: 'wrap', justifyContent: 'center',  }}>
+    <Box mt={5} mx={5} boxShadow={4} >
+      <Typography variant='h5' fontFamily='karma' textAlign='start' my={2} ml={5}>Projects</Typography>
+      <Box sx={{ display: "flex", flexWrap: 'wrap', justifyContent: 'flex-start', ml: 4, }}>
             {pages.map((page) => (
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
                 sx={{
-                  px: 6,
-                  my: 6,
+                  pr: 3,
+                  my: 1,
                   color: "white",
-                  display: "block",
+                  display: "flex",
                   fontFamily: "karma",
                 }}
               >
