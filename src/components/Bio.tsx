@@ -33,7 +33,7 @@ const Bio = () => {
         display='flex'
         flexDirection='column'
         flex={1}
-        width='70%'
+        width='60%'
         >
           <Stack>
             <Typography variant="h3" color="#cec5c5" fontFamily="karma">
@@ -62,12 +62,12 @@ const Bio = () => {
 
         <Box
           mt={1}
-          mr={2}
+
 
         >
           <Stack
           sx={{
-            maxWidth: "330px",
+            maxWidth: "320px",
           }}>
             <img src={Profile} alt="Profile Image" />
           </Stack>
