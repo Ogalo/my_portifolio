@@ -63,9 +63,7 @@ const Bio = () => {
         <Box
           mt={1}
           mr={2}
-          sx={{
-            maxWidth: "350px",
-          }}
+          
         >
           <Stack>
             <img src={Profile} alt="Profile Image" />
