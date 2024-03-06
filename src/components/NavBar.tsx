@@ -14,7 +14,7 @@ import { useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import Logo from "../assests/Logo.png";
 
-const pages = ["Home", "About Me", "Blog", "Services", "Experience"];
+const pages = ["Home", "About", "Blog", "Services", "Experience", "Contact"];
 
 function NavBar() {
   const [anchorElNav, setAnchorElNav] = useState<null | HTMLElement>(null);

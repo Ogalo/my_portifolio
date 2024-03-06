@@ -1,45 +1,79 @@
-import React from 'react'
-import { Box, Typography, Stack, Button } from '@mui/material'
-import Profile from '../assests/Profile.png'
+import React from "react";
+import { Box, Typography, Stack, Button } from "@mui/material";
+import Profile from "../assests/Profile.png";
+import Typewriter from "typewriter-effect";
+import { useTypewriter, Cursor } from "react-simple-typewriter";
 
 const Bio = () => {
+  const [typeEffect] = useTypewriter({
+    words: [
+      "Full-Stack MERN Developer!",
+      "FIGMA Designer!",
+      "Technical Mentor!",
+      "Product Designer!",
+      "Senior Underwriter!",
+    ],
+    loop: 0,
+    typeSpeed: 100,
+    deleteSpeed: 40,
+  });
+
   return (
-    <Box mt={5}>
-      <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 6, justifyContent: 'space-evenly', }}>
-        <Box>
+    <Box
+    display='flex'
+    flexDirection='row'
+    flexWrap='wrap'
+    gap={0.5}
+    my={5}
+    mx={5}
+    p={4}
+    >
 
-      <Stack mt={5}>
-        <Typography variant='h3' color="#cec5c5" fontFamily = "karma"> I'm Harrison </Typography>
-      </Stack>
-      <Stack mt={4}>
-        <Typography variant='h4' fontFamily = "karma">FULL-STACK WEB SOFTWARE </Typography>
-        <Typography variant='h5' mt={1.5} fontFamily = "karma">DEVELOPER.</Typography>
-      </Stack>
-      <Button
-      variant="contained" href="#contained-buttons" sx={{mt: 5}}
-      >
-        Get to Know me
-      </Button>
-        </Box>
-        <Box>
-      <Stack
-        sx={{
-          maxWidth: '330px',
-          mt: 3,
-
-
-        }}
+        <Box
+        display='flex'
+        flexDirection='column'
+        flex={1}
+        width='70%'
         >
-        <img src={Profile} alt='Profile Image' />
-      </Stack>
+          <Stack>
+            <Typography variant="h3" color="#cec5c5" fontFamily="karma">
+              I'm Harrison Otieno,
+            </Typography>
+          </Stack>
+          <Stack mt={2}>
+            <Typography
+              variant="h4"
+              fontFamily="karma"
+              sx={{ fontWeight: "700px" }}
+            >
+              A {typeEffect}
+            </Typography>
+          </Stack>
+          <Stack my={2}>
+          <Typography variant='h6' fontFamily='karma' width='80%' mt={3}>I am a rare combo, with a unique blend of skills ranging from Design, Web development, and analytics. I'm the guy you want in your team.</Typography>
 
+          </Stack>
+          <Stack my={2}>
+          <Button sx={{width:'180px', ml: -1,}} variant="contained" href="#contained-buttons">
+            Get to Know me
+          </Button>
+          </Stack>
         </Box>
-      </Box>
 
-
+        <Box
+          mt={-2}
+          ml={-2}
+          sx={{
+            maxWidth: "350px",
+          }}
+        >
+          <Stack>
+            <img src={Profile} alt="Profile Image" />
+          </Stack>
+        </Box>
 
     </Box>
-  )
-}
+  );
+};
 
 export default Bio;
