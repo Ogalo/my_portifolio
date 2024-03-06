@@ -4,16 +4,16 @@ const About = () => {
   return (
     <Box
     maxWidth="xl"
-      sx={{ alignItems: "center", boxShadow: 3, mx: 10, px: 5 }}
+      sx={{ alignItems: "center", boxShadow: 3, mx: 5, px: 5 }}
       mt={8}
 
     >
-      <Typography variant="h5" textAlign="center" fontFamily="karma">
-          About Me
+      <Typography variant="h5" textAlign="left" fontFamily="karma">
+          About
       </Typography>
       <Typography sx={{ mt: 3, fontFamily: "karma" }}>
         <Typography fontFamily='karma'>
-          I have 4 years of versatile experience spanning Web development,
+          I am a certified full stack web developer || Designer with a 3 years of versatile experience spanning Web development,
           UI-UX design, AI data training and Underwriting, I bring a
           comprehensive skill set to the table. Proficient in full-stack web
           development with a focus on MERN (MongoDB, Express.JS, ReactJS, and
@@ -37,7 +37,7 @@ const About = () => {
           exceptional results.
         </Typography>
       </Typography>
-      <Box sx={{mt: 3, display: 'flex', flexWrap: 'wrap', pb: 3 }}>
+      <Box sx={{mt: 3, display: 'flex', flexDirection: 'row', pb: 3, gap: 10 }}>
 
       <Button
       variant="contained" href="#contained-buttons"
@@ -45,7 +45,7 @@ const About = () => {
         Hire Me
       </Button>
       <Button
-      variant="contained" href="#contained-buttons" sx={{ml: 15}}
+      variant="contained" href="#contained-buttons"
       >
         Resume
       </Button>

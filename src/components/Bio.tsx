@@ -53,7 +53,7 @@ const Bio = () => {
           <Typography variant='h6' fontFamily='karma' width='80%' mt={3}>I am a rare combo, with a unique blend of skills ranging from Design, Web development, and analytics. I'm the guy you want in your team.</Typography>
 
           </Stack>
-          <Stack my={2}>
+          <Stack my={2} py={2}>
           <Button sx={{width:'180px', ml: -1,}} variant="contained" href="#contained-buttons">
             Get to Know me
           </Button>
