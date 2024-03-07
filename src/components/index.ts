@@ -3,6 +3,7 @@ import Bio from './Bio';
 import About from './About';
 import Portifolio from './Portifolio';
 import ProjectCard from './ProjectCard';
+import Tech from './Tech';
 
 
 export {
@@ -11,4 +12,5 @@ export {
   About,
   Portifolio,
   ProjectCard,
+  Tech,
 };
