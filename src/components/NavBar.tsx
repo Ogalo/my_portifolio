@@ -12,7 +12,7 @@ import {
 } from "@mui/material";
 import { useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
-import Logo from "../assests/Logo.png";
+import Logo from "../assests/Logo.svg";
 
 const pages = ["Home", "About", "Blog", "Services", "Experience", "Contact"];
 
@@ -36,23 +36,25 @@ function NavBar() {
   };
 
   return (
-    <Box position="static" >
-      <Container maxWidth="xl" >
-        <Toolbar disableGutters sx={{mx: 4,}}>
+    <Box position="static">
+      <Container maxWidth="xl">
+        <Toolbar disableGutters sx={{ mx: 1 }}>
           <Stack
-            component="a"
-            href="#app-bar-with-responsive-menu"
             sx={{
-              mr: '650px',
-              display: { xs: "none", md: "flex" },
+              display: { xs: "none", lg: "flex" },
               textDecoration: "none",
-              px: 3,
-              gap: 12,
-
+              px: 1,
+              flexDirection: "row",
+              alignItems: 'center',
+              gap: 2,
             }}
-            >
-            <img src={Logo} alt="Logo" width="80 px" height="55 px" />
-
+          >
+            <Stack>
+              <img src={Logo} alt="Logo" width="80 px" height="55 px" />
+            </Stack>
+            <Stack>
+              <Typography variant="h4" fontFamily='karma'>Harrison</Typography>
+            </Stack>
           </Stack>
 
           <Box
@@ -61,8 +63,6 @@ function NavBar() {
               display: {
                 xs: "flex",
                 md: "none",
-                justifyContent: "end",
-                alignItems: "left",
               },
             }}
           >
@@ -102,7 +102,7 @@ function NavBar() {
             </Menu>
           </Box>
 
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+          <Box sx={{ flexGrow: 1, display: { xs: "none", lg: "flex" }, ml: 75}}>
             {pages.map((page) => (
               <Button
                 key={page}
@@ -119,10 +119,7 @@ function NavBar() {
             ))}
           </Box>
 
-          <Box sx={{ flexGrow: 0 }}>
-
-
-          </Box>
+          <Box sx={{ flexGrow: 0 }}></Box>
         </Toolbar>
       </Container>
     </Box>
