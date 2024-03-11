@@ -1,7 +1,6 @@
 import React from "react";
 import { Box, Typography, Stack, Button } from "@mui/material";
 import Profile from "../assests/Profile.png";
-import Typewriter from "typewriter-effect";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 
 const Bio = () => {
@@ -27,6 +26,7 @@ const Bio = () => {
     my={5}
     mx={5}
     py={4}
+
     >
 
         <Box
@@ -54,7 +54,7 @@ const Bio = () => {
 
           </Stack>
           <Stack my={2} py={2}>
-          <Button sx={{width:'180px', ml: 0,}} variant="contained" href="#contained-buttons">
+          <Button sx={{width:'180px', }} variant="contained" href="#contained-buttons">
             Get to Know me
           </Button>
           </Stack>
@@ -67,7 +67,7 @@ const Bio = () => {
         >
           <Stack
           sx={{
-            maxWidth: "320px",
+              maxWidth: "320px",
           }}>
             <img src={Profile} alt="Profile Image" />
           </Stack>
