@@ -22,7 +22,6 @@ const Bio = () => {
     display='flex'
     flexDirection='row'
     flexWrap='wrap'
-    gap={0.5}
     my={5}
     mx={5}
     py={4}
@@ -33,7 +32,8 @@ const Bio = () => {
         display='flex'
         flexDirection='column'
         flex={1}
-        width='60%'
+        sx={{width: {sm: '100%', lg: '80%'}}}
+
         >
           <Stack>
             <Typography variant="h3" color="#cec5c5" fontFamily="karma">
@@ -67,9 +67,12 @@ const Bio = () => {
         >
           <Stack
           sx={{
-              maxWidth: "320px",
+            width: {sm: '100%', lg: '80%'}
+
           }}>
-            <img src={Profile} alt="Profile Image" />
+            <img src={Profile} alt="Profile Image"  />
+
+
           </Stack>
         </Box>
 
