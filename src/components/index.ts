@@ -6,6 +6,7 @@ import ProjectCard from './ProjectCard';
 import Tech from './Tech';
 import Services from './Services'
 import Contact from './Contact'
+import Footer from './Footer'
 
 
 export {
@@ -17,4 +18,5 @@ export {
   Tech,
   Services,
   Contact,
+  Footer,
 };

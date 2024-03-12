@@ -1,5 +1,5 @@
 import { Typography, Stack, Box } from "@mui/material";
-import { Services , Tech, Portifolio, About, Bio, NavBar, Contact } from '../components'
+import { Services , Tech, Portifolio, About, Bio, NavBar, Contact, Footer } from '../components'
 
 
 
@@ -14,6 +14,7 @@ const Home = () => {
           <Tech />
           < Services />
           <Contact />
+          <Footer />
 
         </Box>
     );
