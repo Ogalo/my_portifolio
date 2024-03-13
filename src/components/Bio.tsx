@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Typography, Stack, Button } from "@mui/material";
+import { Box, Typography, Stack, Button, Card, CardMedia } from "@mui/material";
 import Profile from "../assests/Profile.png";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 
@@ -22,9 +22,12 @@ const Bio = () => {
     display='flex'
     flexDirection='row'
     flexWrap='wrap'
+    flex={1}
     my={5}
     px={5}
     py={4}
+    gap={1}
+    justifyContent='space-between'
 
     >
 
@@ -32,8 +35,6 @@ const Bio = () => {
         display='flex'
         flexDirection='column'
         flex={1}
-        sx={{width: {sm: '100%', lg: '80%'}}}
-
         >
           <Stack>
             <Typography variant="h3" color="#cec5c5" fontFamily="karma">
@@ -50,7 +51,7 @@ const Bio = () => {
             </Typography>
           </Stack>
           <Stack my={2}>
-          <Typography fontFamily='karma' width='80%' mt={3}>I am a rare combo, with a unique blend of skills ranging from Design, Web development, and analytics. I'm the guy you want in your team.</Typography>
+          <Typography fontFamily='karma' width='90%' mt={3}>I am a rare combo, with a unique blend of skills ranging from Design, Web development, and analytics. I'm the guy you want in your team.</Typography>
 
           </Stack>
           <Stack my={2} py={2}>
@@ -60,21 +61,27 @@ const Bio = () => {
           </Stack>
         </Box>
 
-        <Box
-          mt={1}
-          pr={15}
 
-        >
           <Stack
+         >
+          <Card
           sx={{
-            width: {sm: '330px', lg: '70%'}
+            maxWidth: "550px",
+            backgroundColor: "#111835",
+          }}
+        >
+          <CardMedia>
 
-          }}>
-            <img height='330px' width='330px' src={Profile} alt="Profile Image"  />
+            <img  width='100%' src={Profile} alt="Profile Image"  />
+
+
+          </CardMedia>
+        </Card>
+
 
 
           </Stack>
-        </Box>
+
 
     </Box>
   );

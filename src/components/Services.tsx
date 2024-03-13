@@ -12,16 +12,14 @@ import  mobile  from '../assests/mobile.svg'
 
 const Services = () => {
   return (
-    <Box px={5} my={5} >
-      <Typography variant="h5" fontFamily="karma" px={5} my={3} pt={5}>
+    <Box px={5}  >
+      <Typography variant="h5" fontFamily="karma" pt={5}>
         Services
       </Typography>
-      <Typography variant="h6" fontFamily="karma" fontWeight={350} px={5}>
-        What I do
-      </Typography>
 
-      <Box display='flex' gap={6} flexDirection='row' flexWrap='wrap'>
-        <Stack px={4} my={5} boxShadow={5} p={2}
+
+      <Box display='flex' gap={6} flexDirection='row' flexWrap='wrap' mt={3} justifyContent='space-evenly'>
+        <Stack boxShadow={5} p={2}
         sx={{
           display: 'flex',
           flexDirection: 'column',
@@ -37,7 +35,7 @@ const Services = () => {
             turpis per volutpat erat mollis semper
           </Typography>
         </Stack>
-        <Stack px={4} my={5} boxShadow={5} p={2}
+        <Stack boxShadow={5} p={2}
         sx={{
           display: 'flex',
           flexDirection: 'column',
@@ -53,7 +51,7 @@ const Services = () => {
             turpis per volutpat erat mollis semper
           </Typography>
         </Stack>
-        <Stack px={4} my={5} boxShadow={5} p={2}
+        <Stack boxShadow={5} p={2}
         sx={{
           display: 'flex',
           flexDirection: 'column',
@@ -69,7 +67,7 @@ const Services = () => {
             turpis per volutpat erat mollis semper
           </Typography>
         </Stack>
-        <Stack px={4} my={5} boxShadow={5} p={2}
+        <Stack boxShadow={5} p={2}
         sx={{
           display: 'flex',
           flexDirection: 'column',
@@ -85,7 +83,7 @@ const Services = () => {
             turpis per volutpat erat mollis semper
           </Typography>
         </Stack>
-        <Stack px={4} my={5} boxShadow={5} p={2}
+        <Stack boxShadow={5} p={2}
         sx={{
           display: 'flex',
           flexDirection: 'column',
@@ -101,7 +99,7 @@ const Services = () => {
             turpis per volutpat erat mollis semper
           </Typography>
         </Stack>
-        <Stack px={4} my={5} boxShadow={5} p={2}
+        <Stack boxShadow={5} p={2}
         sx={{
           display: 'flex',
           flexDirection: 'column',

@@ -10,7 +10,7 @@ import phone from '../assests/phone.svg';
 
 const Contact = () => {
   return (
-    <Box display='flex' gap={10} px={5} my={5} flexWrap='wrap' flexDirection='row'>
+    <Box display='flex' gap={10} px={5} my={10} flexWrap='wrap' flexDirection='row' justifyContent='space-between'>
       <Stack sx={{width: {sm: '100%', lg: '40%'}}}>
         Drop Me a Message
         <form style={{margin: 3, width: '100%', display: 'flex', flexDirection: 'column', gap: '10px' }}>

@@ -22,22 +22,24 @@ import expressIcon from '../assests/express.svg'
 const Tech = () => {
   return (
     <Box my={5}  px={5}>
-      <Typography variant="h5" fontFamily="karma" my={5} px={5} pt={5}>
-        {" "}
+      <Typography variant="h5" fontFamily="karma" pt={5}>
+
         Technologies
       </Typography>
-      <Box display="flex" flexDirection="row" flexWrap="wrap" gap={2} px={2} pl={3}>
+      <Box display="flex" flexDirection="row" flexWrap="wrap" gap={2} >
         <Stack
           display="flex"
           flexDirection="row"
           gap={6}
           alignItems="center"
           my={2}
-          px={3}
+          width='230px'
+          justifyContent='space-evenly'
+
           sx={{
             boxShadow: 20,
             py: 1,
-            px: 4,
+
           }}
         >
           <img height="45px" src={reactIcon} alt="react" />
@@ -49,11 +51,12 @@ const Tech = () => {
           gap={6}
           alignItems="center"
           my={2}
-          px={3}
+          width='230px'
+          justifyContent='space-evenly'
           sx={{
             boxShadow: 20,
             py: 1,
-            px: 4,
+
           }}
         >
           <img height="45px" src={mongoDb} alt="mongo" />
@@ -65,11 +68,12 @@ const Tech = () => {
           gap={6}
           alignItems="center"
           my={2}
-          px={3}
+          width='230px'
+          justifyContent='space-evenly'
           sx={{
             boxShadow: 20,
             py: 1,
-            px: 4,
+
           }}
         >
           <img height="45px" src={node} alt="node" />
@@ -81,11 +85,12 @@ const Tech = () => {
           gap={6}
           alignItems="center"
           my={2}
-          px={3}
+          width='230px'
+          justifyContent='space-evenly'
           sx={{
             boxShadow: 20,
             py: 1,
-            px: 4,
+
           }}
         >
           <img height="45px" src={expressIcon} alt="express" />
@@ -97,11 +102,12 @@ const Tech = () => {
           gap={6}
           alignItems="center"
           my={2}
-          px={3}
+          width='230px'
+          justifyContent='space-evenly'
           sx={{
             boxShadow: 20,
             py: 1,
-            px: 4,
+
           }}
         >
           <img color='#000000' height="45px" src={github} alt="github" />
@@ -113,11 +119,12 @@ const Tech = () => {
           gap={6}
           alignItems="center"
           my={2}
-          px={3}
+          width='230px'
+          justifyContent='space-evenly'
           sx={{
             boxShadow: 20,
             py: 1,
-            px: 4,
+
           }}
         >
           <img height="45px" src={nextjs} alt="nextjs" />
@@ -129,11 +136,12 @@ const Tech = () => {
           gap={6}
           alignItems="center"
           my={2}
-          px={3}
+          width='230px'
+          justifyContent='space-evenly'
           sx={{
             boxShadow: 20,
             py: 1,
-            px: 4,
+
           }}
         >
           <img height="45px" src={javaScriptIcon} alt="javascript" />
@@ -145,11 +153,12 @@ const Tech = () => {
           gap={6}
           alignItems="center"
           my={2}
-          px={3}
+          width='230px'
+          justifyContent='space-evenly'
           sx={{
             boxShadow: 20,
             py: 1,
-            px: 4,
+
           }}
         >
           <img height="45px" src={figma} alt="figma" />
@@ -161,11 +170,12 @@ const Tech = () => {
           gap={6}
           alignItems="center"
           my={2}
-          px={3}
+          width='230px'
+          justifyContent='space-evenly'
           sx={{
             boxShadow: 20,
             py: 1,
-            px: 4,
+
           }}
         >
           <img height="45px" src={materialUI} alt="material UI" />
@@ -177,11 +187,12 @@ const Tech = () => {
           gap={6}
           alignItems="center"
           my={2}
-          px={3}
+          width='230px'
+          justifyContent='space-evenly'
           sx={{
             boxShadow: 20,
             py: 1,
-            px: 4,
+
           }}
         >
           <img height="45px" src={html} alt="html" />
@@ -193,11 +204,12 @@ const Tech = () => {
           gap={6}
           alignItems="center"
           my={2}
-          px={3}
+          width='230px'
+          justifyContent='space-evenly'
           sx={{
             boxShadow: 20,
             py: 1,
-            px: 4,
+
           }}
         >
           <img height="45px" src={css3} alt="css3" />
@@ -209,11 +221,12 @@ const Tech = () => {
           gap={6}
           alignItems="center"
           my={2}
-          px={3}
+          width='230px'
+          justifyContent='space-evenly'
           sx={{
             boxShadow: 20,
             py: 1,
-            px: 4,
+
           }}
         >
           <img height="45px" src={vue} alt="vue js" />
