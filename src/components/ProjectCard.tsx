@@ -10,6 +10,8 @@ import {
 import GitHubIcon from "@mui/icons-material/GitHub";
 import DashPro from "../assests/dashPro.png";
 import bomaPro from "../assests/bomaPro.png";
+import Figma from '../assests/figma.svg';
+import workflow from '../assests/workflow.svg'
 
 const ProjectCard = () => {
   return (
@@ -143,25 +145,20 @@ const ProjectCard = () => {
         <Stack display="flex" flexDirection="column" flex={1} width="100%">
           <Stack>
             <Typography variant="h5" color="#83C4D2" fontFamily="karma">
-              Admin Dashboard
+              Work Flow Journal
             </Typography>
           </Stack>
           <Stack mt={2.5}>
             <Typography fontFamily="karma" width="100%">
-              The Admin Dashboard is a versatile platform empowering
-              administrators with insights and control. It offers comprehensive
-              customization, enabling users to tailor their interface precisely.
-              With an intuitive drag-and-drop interface, administrators can
-              effortlessly arrange widgets, charts, and data modules for a
-              personalized view of key metrics. The dashboard's robust
-              visualization capabilities include various chart types like line
-              graphs, bar charts, and pie charts to represent data effectively.
-              Real-time updates ensure administrators have access to the latest
-              information, facilitating informed decision-making.
+            This workflow chart outlines the sequential guiding steps involved in the process of underwriting, within a SaaS platform. It begins with the application order, followed by various check to ensure product quality. Subsequently, the application is checked for frauds. Once ready, it undergoes quality control to ensure accuracy and completeness. The final step involves senting the applicant an acceptance message, with clear instruction on what is to follow. Throughout this process, communication channels are maintained to keep the customer informed at each stage, ensuring a smooth and satisfactory transaction experience.
             </Typography>
           </Stack>
           <Stack my={2}>
-            <GitHubIcon />
+            <a href='https://www.figma.com/file/CC2sm43wNbfFPAtMQ0vXQd/INV-Figma%3A-Findigs---McKinley-UaaS-Mechanics-%5BVersion-1.0-Feb%5D?type=whiteboard&node-id=0%3A1&t=Ea7XSRP6ujrEAuR2-1'>
+            <img src={Figma} alt='Figma' width='30px' />
+            <Typography>View Design</Typography>
+
+            </a>
           </Stack>
         </Stack>
         <Card
@@ -171,7 +168,10 @@ const ProjectCard = () => {
           }}
         >
           <CardMedia>
-            <img src={DashPro} alt="dash pro" width="100%" />
+            <a href='https://www.figma.com/file/CC2sm43wNbfFPAtMQ0vXQd/INV-Figma%3A-Findigs---McKinley-UaaS-Mechanics-%5BVersion-1.0-Feb%5D?type=whiteboard&node-id=0%3A1&t=Ea7XSRP6ujrEAuR2-1'>
+            <img src={workflow} alt="workflow" width="100%" />
+
+            </a>
           </CardMedia>
         </Card>
       </Stack>
