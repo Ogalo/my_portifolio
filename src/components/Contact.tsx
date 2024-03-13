@@ -10,7 +10,7 @@ import phone from '../assests/phone.svg';
 
 const Contact = () => {
   return (
-    <Box display='flex' gap={5} px={5} my={5} flexWrap='wrap' flexDirection='row'>
+    <Box display='flex' gap={10} px={5} my={5} flexWrap='wrap' flexDirection='row'>
       <Stack sx={{width: {sm: '100%', lg: '40%'}}}>
         Drop Me a Message
         <form style={{margin: 3, width: '100%', display: 'flex', flexDirection: 'column', gap: '10px' }}>
@@ -58,20 +58,20 @@ const Contact = () => {
       </Stack>
       <Stack sx={{width: {sm: '100%', lg: '50%'}}}>
         Social links
-        <Typography variant='h6' fontFamily='karma'>You can reach me out for mentorship, networking, coaching and business
+        <Typography fontFamily='karma' width='100%' pt={3}>You can reach me out for mentorship, networking, business
 via the following contact info below. Don’t forget to leave a comment and suggestion
 using the suggestion box on the right.</Typography>
 
-    <Box display='block' flexDirection='row' flexWrap='wrap' gap={2} my={2} ml={2}>
+    <Box display='block' flexDirection='row' flexWrap='wrap' gap={1} my={2} pr={2}>
       <Stack display='flex' flexDirection='row' gap={3} my={3} alignItems='center'>
 <img src={envelope} alt='envelope' height='20px' width='20px'/>
-<Typography variant='h6' fontFamily='karma'>otienoharrison95@gmail.com</Typography>
+<Typography fontFamily='karma'>otienoharrison95@gmail.com</Typography>
 
       </Stack>
       <Stack display='flex' flexDirection='row' gap={3} my={3} alignItems='center'>
 <img src={linkedin} alt='linkedin' height='20px' width='20px'/>
 <a href='https://www.linkedin.com/in/harrison-otieno-442a12162/'>
-<Typography variant='h6' fontFamily='karma'>https://www.linkedin.com/in/harrison-otieno-442a12162/</Typography>
+<Typography fontFamily='karma'>Harrison Otieno</Typography>
 
 </a>
 
@@ -79,7 +79,7 @@ using the suggestion box on the right.</Typography>
       <Stack display='flex' flexDirection='row' gap={3} my={3} alignItems='center'>
 <img src={whatsapp} alt='whatsapp' height='20px' width='20px'/>
 <a href='https://wa.me/254778109769' >
-<Typography variant='h6' fontFamily='karma'>https://wa.me/254778109769</Typography>
+<Typography fontFamily='karma'>Automate Ventures</Typography>
 </a>
 
       </Stack>

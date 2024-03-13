@@ -34,7 +34,7 @@ function NavBar() {
   return (
     <Box position="static">
       <Container maxWidth="xl">
-        <Toolbar disableGutters sx={{ mx: 1 }}>
+        <Toolbar disableGutters>
           <Stack
             sx={{
               display: { xs: "none", lg: "flex" },

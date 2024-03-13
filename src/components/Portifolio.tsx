@@ -10,9 +10,9 @@ const Portifolio = () => {
 
 
   return (
-    <Box my={5} mx={5} boxShadow={4} >
-      <Typography variant='h5' fontFamily='karma' textAlign='start' my={2} ml={5}>Projects</Typography>
-      <Box sx={{ display: "flex", flexWrap: 'wrap', justifyContent: 'flex-start', ml: 4, }}>
+    <Box my={5} px={5} >
+      <Typography variant='h5' fontFamily='karma' textAlign='start' my={2} >Projects</Typography>
+      <Box sx={{ display: "flex", flexWrap: 'wrap', justifyContent: 'flex-start',  }}>
             {pages.map((page) => (
               <Button
                 key={page}

@@ -21,19 +21,19 @@ import expressIcon from '../assests/express.svg'
 
 const Tech = () => {
   return (
-    <Box my={5} boxShadow={4} mx={5}>
-      <Typography variant="h5" fontFamily="karma" my={5} mx={5} pt={5}>
+    <Box my={5}  px={5}>
+      <Typography variant="h5" fontFamily="karma" my={5} px={5} pt={5}>
         {" "}
         Technologies
       </Typography>
-      <Box display="flex" flexDirection="row" flexWrap="wrap" gap={1} mx={2}>
+      <Box display="flex" flexDirection="row" flexWrap="wrap" gap={2} px={2} pl={3}>
         <Stack
           display="flex"
           flexDirection="row"
           gap={6}
           alignItems="center"
           my={2}
-          mx={3}
+          px={3}
           sx={{
             boxShadow: 20,
             py: 1,
@@ -41,7 +41,7 @@ const Tech = () => {
           }}
         >
           <img height="45px" src={reactIcon} alt="react" />
-          <Typography>REACT JS</Typography>
+          <Typography fontFamily='karma'>REACT JS</Typography>
         </Stack>
         <Stack
           display="flex"
@@ -49,7 +49,7 @@ const Tech = () => {
           gap={6}
           alignItems="center"
           my={2}
-          mx={3}
+          px={3}
           sx={{
             boxShadow: 20,
             py: 1,
@@ -57,7 +57,7 @@ const Tech = () => {
           }}
         >
           <img height="45px" src={mongoDb} alt="mongo" />
-          <Typography>MongoDB</Typography>
+          <Typography fontFamily='karma'>MongoDB</Typography>
         </Stack>
         <Stack
           display="flex"
@@ -65,7 +65,7 @@ const Tech = () => {
           gap={6}
           alignItems="center"
           my={2}
-          mx={3}
+          px={3}
           sx={{
             boxShadow: 20,
             py: 1,
@@ -73,7 +73,7 @@ const Tech = () => {
           }}
         >
           <img height="45px" src={node} alt="node" />
-          <Typography>Node JS</Typography>
+          <Typography fontFamily='karma'>Node JS</Typography>
         </Stack>
         <Stack
           display="flex"
@@ -81,7 +81,7 @@ const Tech = () => {
           gap={6}
           alignItems="center"
           my={2}
-          mx={3}
+          px={3}
           sx={{
             boxShadow: 20,
             py: 1,
@@ -89,7 +89,7 @@ const Tech = () => {
           }}
         >
           <img height="45px" src={expressIcon} alt="express" />
-          <Typography>Express JS</Typography>
+          <Typography fontFamily='karma'>Express JS</Typography>
         </Stack>
         <Stack
           display="flex"
@@ -97,7 +97,7 @@ const Tech = () => {
           gap={6}
           alignItems="center"
           my={2}
-          mx={3}
+          px={3}
           sx={{
             boxShadow: 20,
             py: 1,
@@ -105,7 +105,7 @@ const Tech = () => {
           }}
         >
           <img color='#000000' height="45px" src={github} alt="github" />
-          <Typography>Github</Typography>
+          <Typography fontFamily='karma'>Github</Typography>
         </Stack>
         <Stack
           display="flex"
@@ -113,7 +113,7 @@ const Tech = () => {
           gap={6}
           alignItems="center"
           my={2}
-          mx={3}
+          px={3}
           sx={{
             boxShadow: 20,
             py: 1,
@@ -121,7 +121,7 @@ const Tech = () => {
           }}
         >
           <img height="45px" src={nextjs} alt="nextjs" />
-          <Typography>Next JS</Typography>
+          <Typography fontFamily='karma'>Next JS</Typography>
         </Stack>
         <Stack
           display="flex"
@@ -129,7 +129,7 @@ const Tech = () => {
           gap={6}
           alignItems="center"
           my={2}
-          mx={3}
+          px={3}
           sx={{
             boxShadow: 20,
             py: 1,
@@ -137,7 +137,7 @@ const Tech = () => {
           }}
         >
           <img height="45px" src={javaScriptIcon} alt="javascript" />
-          <Typography>JavaScript</Typography>
+          <Typography fontFamily='karma'>JavaScript</Typography>
         </Stack>
         <Stack
           display="flex"
@@ -145,7 +145,7 @@ const Tech = () => {
           gap={6}
           alignItems="center"
           my={2}
-          mx={3}
+          px={3}
           sx={{
             boxShadow: 20,
             py: 1,
@@ -153,7 +153,7 @@ const Tech = () => {
           }}
         >
           <img height="45px" src={figma} alt="figma" />
-          <Typography>Figma</Typography>
+          <Typography fontFamily='karma'>Figma</Typography>
         </Stack>
         <Stack
           display="flex"
@@ -161,7 +161,7 @@ const Tech = () => {
           gap={6}
           alignItems="center"
           my={2}
-          mx={3}
+          px={3}
           sx={{
             boxShadow: 20,
             py: 1,
@@ -169,7 +169,7 @@ const Tech = () => {
           }}
         >
           <img height="45px" src={materialUI} alt="material UI" />
-          <Typography>Material UI</Typography>
+          <Typography fontFamily='karma'>Material UI</Typography>
         </Stack>
         <Stack
           display="flex"
@@ -177,7 +177,7 @@ const Tech = () => {
           gap={6}
           alignItems="center"
           my={2}
-          mx={3}
+          px={3}
           sx={{
             boxShadow: 20,
             py: 1,
@@ -185,7 +185,7 @@ const Tech = () => {
           }}
         >
           <img height="45px" src={html} alt="html" />
-          <Typography>HTML</Typography>
+          <Typography fontFamily='karma'>HTML</Typography>
         </Stack>
         <Stack
           display="flex"
@@ -193,7 +193,7 @@ const Tech = () => {
           gap={6}
           alignItems="center"
           my={2}
-          mx={3}
+          px={3}
           sx={{
             boxShadow: 20,
             py: 1,
@@ -201,7 +201,7 @@ const Tech = () => {
           }}
         >
           <img height="45px" src={css3} alt="css3" />
-          <Typography>CSS</Typography>
+          <Typography fontFamily='karma'>CSS</Typography>
         </Stack>
         <Stack
           display="flex"
@@ -209,7 +209,7 @@ const Tech = () => {
           gap={6}
           alignItems="center"
           my={2}
-          mx={3}
+          px={3}
           sx={{
             boxShadow: 20,
             py: 1,
@@ -217,7 +217,7 @@ const Tech = () => {
           }}
         >
           <img height="45px" src={vue} alt="vue js" />
-          <Typography>Vue JS</Typography>
+          <Typography fontFamily='karma'>Vue JS</Typography>
         </Stack>
 
 

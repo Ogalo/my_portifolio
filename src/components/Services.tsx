@@ -12,16 +12,16 @@ import  mobile  from '../assests/mobile.svg'
 
 const Services = () => {
   return (
-    <Box mx={5} my={5} boxShadow={5}>
-      <Typography variant="h5" fontFamily="karma" mx={5} my={3} pt={5}>
+    <Box px={5} my={5} >
+      <Typography variant="h5" fontFamily="karma" px={5} my={3} pt={5}>
         Services
       </Typography>
-      <Typography variant="h5" fontFamily="karma" fontWeight={350} mx={5}>
+      <Typography variant="h6" fontFamily="karma" fontWeight={350} px={5}>
         What I do
       </Typography>
 
-      <Box display='flex' gap={1} flexDirection='row' flexWrap='wrap'>
-        <Stack mx={4} my={5} boxShadow={5} p={2}
+      <Box display='flex' gap={6} flexDirection='row' flexWrap='wrap'>
+        <Stack px={4} my={5} boxShadow={5} p={2}
         sx={{
           display: 'flex',
           flexDirection: 'column',
@@ -30,14 +30,14 @@ const Services = () => {
         }}>
           <img src={design} alt='design' height='80px' width='80px'/>
 
-          <Typography variant='h5' fontFamily='karma'> UI/UX  Design</Typography>
+          <Typography variant='h5' fontFamily='karma' pt={2}> UI/UX  Design</Typography>
           <Typography variant='h6' fontFamily='karma' my={1}>
             Lorem ipsum dolor sit amet consectetur, adipiscing elit neque curae
             pellentesque dictumst, nam vitae pulvinar cum. Fusce tristique
             turpis per volutpat erat mollis semper
           </Typography>
         </Stack>
-        <Stack mx={4} my={5} boxShadow={5} p={2}
+        <Stack px={4} my={5} boxShadow={5} p={2}
         sx={{
           display: 'flex',
           flexDirection: 'column',
@@ -46,14 +46,14 @@ const Services = () => {
         }}>
           <img src={web} alt='design' height='80px' width='80px'/>
 
-          <Typography variant='h5' fontFamily='karma'> Web Development</Typography>
+          <Typography variant='h5' fontFamily='karma' pt={2}> Web Development</Typography>
           <Typography variant='h6' fontFamily='karma' my={1}>
             Lorem ipsum dolor sit amet consectetur, adipiscing elit neque curae
             pellentesque dictumst, nam vitae pulvinar cum. Fusce tristique
             turpis per volutpat erat mollis semper
           </Typography>
         </Stack>
-        <Stack mx={4} my={5} boxShadow={5} p={2}
+        <Stack px={4} my={5} boxShadow={5} p={2}
         sx={{
           display: 'flex',
           flexDirection: 'column',
@@ -62,14 +62,14 @@ const Services = () => {
         }}>
           <img src={mobile} alt='design' height='80px' width='80px'/>
 
-          <Typography variant='h5' fontFamily='karma'> Mobile App</Typography>
+          <Typography variant='h5' fontFamily='karma' pt={2}> Mobile App</Typography>
           <Typography variant='h6' fontFamily='karma' my={1}>
             Lorem ipsum dolor sit amet consectetur, adipiscing elit neque curae
             pellentesque dictumst, nam vitae pulvinar cum. Fusce tristique
             turpis per volutpat erat mollis semper
           </Typography>
         </Stack>
-        <Stack mx={4} my={5} boxShadow={5} p={2}
+        <Stack px={4} my={5} boxShadow={5} p={2}
         sx={{
           display: 'flex',
           flexDirection: 'column',
@@ -78,14 +78,14 @@ const Services = () => {
         }}>
           <img src={notes} alt='design' height='80px' width='80px'/>
 
-          <Typography variant='h5' fontFamily='karma'> Content Writing</Typography>
+          <Typography variant='h5' fontFamily='karma' pt={2}> Content Writing</Typography>
           <Typography variant='h6' fontFamily='karma' my={1}>
             Lorem ipsum dolor sit amet consectetur, adipiscing elit neque curae
             pellentesque dictumst, nam vitae pulvinar cum. Fusce tristique
             turpis per volutpat erat mollis semper
           </Typography>
         </Stack>
-        <Stack mx={4} my={5} boxShadow={5} p={2}
+        <Stack px={4} my={5} boxShadow={5} p={2}
         sx={{
           display: 'flex',
           flexDirection: 'column',
@@ -94,14 +94,14 @@ const Services = () => {
         }}>
           <img src={video} alt='design' height='80px' width='80px'/>
 
-          <Typography variant='h5' fontFamily='karma'> Video Editing</Typography>
+          <Typography variant='h5' fontFamily='karma' pt={2}> Video Editing</Typography>
           <Typography variant='h6' fontFamily='karma' my={1}>
             Lorem ipsum dolor sit amet consectetur, adipiscing elit neque curae
             pellentesque dictumst, nam vitae pulvinar cum. Fusce tristique
             turpis per volutpat erat mollis semper
           </Typography>
         </Stack>
-        <Stack mx={4} my={5} boxShadow={5} p={2}
+        <Stack px={4} my={5} boxShadow={5} p={2}
         sx={{
           display: 'flex',
           flexDirection: 'column',
@@ -110,7 +110,7 @@ const Services = () => {
         }}>
           <img src={marketing} alt='design' height='80px' width='80px'/>
 
-          <Typography variant='h5' fontFamily='karma'> Mentorship</Typography>
+          <Typography variant='h5' fontFamily='karma' pt={2}> Mentorship</Typography>
           <Typography variant='h6' fontFamily='karma' my={1}>
             Lorem ipsum dolor sit amet consectetur, adipiscing elit neque curae
             pellentesque dictumst, nam vitae pulvinar cum. Fusce tristique

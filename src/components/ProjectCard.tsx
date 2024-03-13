@@ -19,7 +19,7 @@ const ProjectCard = () => {
       flexWrap="wrap"
       gap={0.5}
       my={5}
-      mx={5}
+
     >
       <Stack
         display="flex"
@@ -29,14 +29,14 @@ const ProjectCard = () => {
         flex={1}
         width="100%"
       >
-        <Stack display="flex" flexDirection="column" flex={1} width="70%">
+        <Stack display="flex" flexDirection="column" flex={1} >
           <Stack>
             <Typography variant="h5" color="#83C4D2" fontFamily="karma">
               Admin Dashboard
             </Typography>
           </Stack>
           <Stack mt={2.5}>
-            <Typography fontFamily="karma" width="90%">
+            <Typography fontFamily="karma" width="100%">
               The Admin Dashboard is a versatile platform empowering
               administrators with insights and control. It offers comprehensive
               customization, enabling users to tailor their interface precisely.
@@ -101,7 +101,7 @@ const ProjectCard = () => {
           display="flex"
           flexDirection="column"
           flex={1}
-          width="70%"
+          width="100%"
           mt={5}
         >
           <Stack>
@@ -140,14 +140,14 @@ const ProjectCard = () => {
         flex={1}
         width="100%"
       >
-        <Stack display="flex" flexDirection="column" flex={1} width="70%">
+        <Stack display="flex" flexDirection="column" flex={1} width="100%">
           <Stack>
             <Typography variant="h5" color="#83C4D2" fontFamily="karma">
               Admin Dashboard
             </Typography>
           </Stack>
           <Stack mt={2.5}>
-            <Typography fontFamily="karma" width="90%">
+            <Typography fontFamily="karma" width="100%">
               The Admin Dashboard is a versatile platform empowering
               administrators with insights and control. It offers comprehensive
               customization, enabling users to tailor their interface precisely.

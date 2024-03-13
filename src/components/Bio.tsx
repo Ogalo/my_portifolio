@@ -67,7 +67,7 @@ const Bio = () => {
         >
           <Stack
           sx={{
-            width: {sm: '100%', lg: '70%'}
+            width: {sm: '330px', lg: '70%'}
 
           }}>
             <img height='330px' width='330px' src={Profile} alt="Profile Image"  />
