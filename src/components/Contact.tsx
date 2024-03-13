@@ -10,7 +10,7 @@ import phone from '../assests/phone.svg';
 
 const Contact = () => {
   return (
-    <Box display='flex' gap={5} mx={5} my={5} flexWrap='wrap' flexDirection='row'>
+    <Box display='flex' gap={5} px={5} my={5} flexWrap='wrap' flexDirection='row'>
       <Stack sx={{width: {sm: '100%', lg: '40%'}}}>
         Drop Me a Message
         <form style={{margin: 3, width: '100%', display: 'flex', flexDirection: 'column', gap: '10px' }}>
@@ -70,12 +70,17 @@ using the suggestion box on the right.</Typography>
       </Stack>
       <Stack display='flex' flexDirection='row' gap={3} my={3} alignItems='center'>
 <img src={linkedin} alt='linkedin' height='20px' width='20px'/>
+<a href='https://www.linkedin.com/in/harrison-otieno-442a12162/'>
 <Typography variant='h6' fontFamily='karma'>https://www.linkedin.com/in/harrison-otieno-442a12162/</Typography>
+
+</a>
 
       </Stack>
       <Stack display='flex' flexDirection='row' gap={3} my={3} alignItems='center'>
 <img src={whatsapp} alt='whatsapp' height='20px' width='20px'/>
+<a href='https://wa.me/254778109769' >
 <Typography variant='h6' fontFamily='karma'>https://wa.me/254778109769</Typography>
+</a>
 
       </Stack>
       <Stack display='flex' flexDirection='row' gap={3} my={3} alignItems='center'>
