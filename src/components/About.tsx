@@ -1,10 +1,22 @@
 import { Box, Typography, Stack, Button } from "@mui/material";
 
+
 const About = () => {
+
+  const onButtonClick = () => {
+    const pdfUrl = "Resume.pdf";
+    const link = document.createElement("a");
+    link.href = pdfUrl;
+    link.download = "Resume.pdf"; // specify the filename
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+};
+
   return (
     <Box
 
-      sx={{ alignItems: "center", boxShadow: 4, mx: 5, px: 5 }}
+      sx={{ alignItems: "center", px: 5 }}
       mt={5}
 
     >
@@ -38,16 +50,11 @@ const About = () => {
         </Typography>
       </Typography>
       <Box sx={{mt: 3, display: 'flex', flexDirection: 'row', pb: 3, gap: 10 }}>
-
       <Button
-      variant="contained" href="#contained-buttons"
+      sx={{borderBottom: 2, }}
+      onClick={onButtonClick}
       >
-        Hire Me
-      </Button>
-      <Button
-      variant="contained" href="#contained-buttons"
-      >
-        Resume
+       Download Resume
       </Button>
       </Box>
 
