@@ -52,6 +52,8 @@ const ProjectCard = () => {
           <Stack my={2}>
             <a href='https://github.com/Ogalo/dashboard_pro'>
             <GitHubIcon />
+            <Typography>View code</Typography>
+
             </a>
           </Stack>
         </Stack>
@@ -121,6 +123,7 @@ const ProjectCard = () => {
           <Stack my={2}>
           <a href='https://github.com/Ogalo/Properties'>
             <GitHubIcon />
+            <Typography>View code</Typography>
             </a>
           </Stack>
         </Stack>
