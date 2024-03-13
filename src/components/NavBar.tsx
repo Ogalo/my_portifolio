@@ -6,34 +6,30 @@ import {
   Menu,
   Container,
   Button,
-  Tooltip,
   MenuItem,
   Stack,
 } from "@mui/material";
 import { useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import Logo from "../assests/Logo.svg";
+import { useNavigate } from "react-router-dom";
+
 
 const pages = ["Home", "About", "Blog", "Services", "Experience", "Contact"];
 
 function NavBar() {
   const [anchorElNav, setAnchorElNav] = useState<null | HTMLElement>(null);
-  const [anchorElUser, setAnchorElUser] = useState<null | HTMLElement>(null);
+
 
   const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorElNav(event.currentTarget);
-  };
-  const handleOpenUserMenu = (event: React.MouseEvent<HTMLElement>) => {
-    setAnchorElUser(event.currentTarget);
   };
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
 
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
-  };
+
 
   return (
     <Box position="static">
@@ -119,7 +115,7 @@ function NavBar() {
             ))}
           </Box>
 
-          <Box sx={{ flexGrow: 0 }}></Box>
+
         </Toolbar>
       </Container>
     </Box>

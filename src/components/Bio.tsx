@@ -23,7 +23,7 @@ const Bio = () => {
     flexDirection='row'
     flexWrap='wrap'
     my={5}
-    mx={5}
+    px={5}
     py={4}
 
     >
@@ -50,7 +50,7 @@ const Bio = () => {
             </Typography>
           </Stack>
           <Stack my={2}>
-          <Typography variant='h6' fontFamily='karma' width='80%' mt={3}>I am a rare combo, with a unique blend of skills ranging from Design, Web development, and analytics. I'm the guy you want in your team.</Typography>
+          <Typography fontFamily='karma' width='80%' mt={3}>I am a rare combo, with a unique blend of skills ranging from Design, Web development, and analytics. I'm the guy you want in your team.</Typography>
 
           </Stack>
           <Stack my={2} py={2}>
@@ -70,7 +70,7 @@ const Bio = () => {
             width: {sm: '100%', lg: '80%'}
 
           }}>
-            <img src={Profile} alt="Profile Image"  />
+            <img height='330px' width='330px' src={Profile} alt="Profile Image"  />
 
 
           </Stack>

@@ -3,12 +3,12 @@ import { Box, Typography, Stack, Button } from "@mui/material";
 const About = () => {
   return (
     <Box
-    maxWidth="xl"
+
       sx={{ alignItems: "center", boxShadow: 4, mx: 5, px: 5 }}
-      mt={8}
+      mt={5}
 
     >
-      <Typography variant="h5" textAlign="left" fontFamily="karma">
+      <Typography variant="h5" textAlign="left" fontFamily="karma" mt={3}>
           About
       </Typography>
       <Typography sx={{ mt: 3, fontFamily: "karma" }}>
