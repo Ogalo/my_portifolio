@@ -4,22 +4,30 @@ import linkedin from '../assests/linkedin.svg';
 import whatsapp from '../assests/whatsapp.svg';
 import phone from '../assests/phone.svg';
 import emailjs from '@emailjs/browser';
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
+
 
 
 
 
 
 const Contact = () => {
+  const [state, setState] = React.useState({ name: "", email: "", message: "" });
+
 
   const form = useRef();
 
   const sendEmail = (e: any) => {
-    e.preventDefault(); // prevents the page from reloading when you hit “Send”
+    e.preventDefault();
+    setState({ name: "",email: "", message: "" });
 
-    emailjs.sendForm('service_p6ck6of', 'template_m7i32h3', e.currentTarget, 'pobYJ-XJkUXH_dYd6')
-      .then(() => {
+
+    emailjs.sendForm('service_p6ck6of', 'template_m7i32h3', e.currentTarget,  'pobYJ-XJkUXH_dYd6')
+      .then((e) => {
           alert('message sent successfully')
+
+
+
       }, (error) => {
           alert(error.message)
       });
@@ -42,6 +50,10 @@ const Contact = () => {
           color='info'
           variant='outlined'
           name='name'
+          value={state.name}
+          onChange={(e) => {
+            setState({ ...state, name: e.target.value });
+          }}
           />
         </FormControl>
         <FormControl>
@@ -57,6 +69,11 @@ const Contact = () => {
           color='info'
           variant='outlined'
           name='email'
+          value={state.email}
+          onChange={(e) => {
+            setState({ ...state, email: e.target.value });
+          }}
+
           />
         </FormControl>
         <FormControl>
@@ -67,6 +84,10 @@ const Contact = () => {
           minRows={5}
           required
           name='message'
+          value={state.message}
+          onChange={(e) => {
+          setState({ ...state, message: e.target.value });
+        }}
           color='info'
           style={{ width: "100%", fontSize: '16px', borderRadius: 6, padding: 10, borderColor: 'rgba(0, 0, 0, 0.23)', color: '#949494', backgroundColor: '#949494'  }}
 
