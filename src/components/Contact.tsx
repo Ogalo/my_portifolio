@@ -3,27 +3,45 @@ import envelope from '../assests/envelope.svg';
 import linkedin from '../assests/linkedin.svg';
 import whatsapp from '../assests/whatsapp.svg';
 import phone from '../assests/phone.svg';
+import emailjs from '@emailjs/browser';
+import React, { useRef } from 'react';
 
 
 
 
 
 const Contact = () => {
+
+  const form = useRef();
+
+  const sendEmail = (e: any) => {
+    e.preventDefault(); // prevents the page from reloading when you hit “Send”
+
+    emailjs.sendForm('service_p6ck6of', 'template_m7i32h3', e.currentTarget, 'pobYJ-XJkUXH_dYd6')
+      .then(() => {
+          alert('message sent successfully')
+      }, (error) => {
+          alert(error.message)
+      });
+  };
   return (
     <Box display='flex' gap={10} px={5} my={10} flexWrap='wrap' flexDirection='row' justifyContent='space-between'>
       <Stack sx={{width: {sm: '100%', lg: '40%'}}}>
         Drop Me a Message
-        <form style={{margin: 3, width: '100%', display: 'flex', flexDirection: 'column', gap: '10px' }}>
+        <form style={{margin: 3, width: '100%', display: 'flex', flexDirection: 'column', gap: '10px' }} onSubmit={sendEmail} >
         <FormControl>
           <FormHelperText sx={{ fontWeight: 500, margin: '10px 0', fontSize: 16, color: '#ffffff'}}>
             Enter your name
           </FormHelperText>
           <TextField
           fullWidth
+          sx={{backgroundColor: '#949494'}}
+          type='text'
           required
           id='outlined-basic'
           color='info'
           variant='outlined'
+          name='name'
           />
         </FormControl>
         <FormControl>
@@ -33,23 +51,30 @@ const Contact = () => {
           <TextField
           fullWidth
           required
+          sx={{backgroundColor: '#949494'}}
+          type='email'
           id='outlined-basic'
           color='info'
           variant='outlined'
+          name='email'
           />
         </FormControl>
         <FormControl>
           <FormHelperText sx={{ fontWeight: 500, margin: '10px 0', fontSize: 16, color: '#ffffff'}}>
-            Enter your name
+            Enter your message
           </FormHelperText>
           <TextareaAutosize
           minRows={5}
           required
-          color='#111835'
-          style={{ width: "100%", fontSize: '16px', borderRadius: 6, padding: 10, background: '#111835' }}
+          name='message'
+          color='info'
+          style={{ width: "100%", fontSize: '16px', borderRadius: 6, padding: 10, borderColor: 'rgba(0, 0, 0, 0.23)', color: '#949494', backgroundColor: '#949494'  }}
+
+
+
           />
         </FormControl>
-        <Button variant="outlined">
+        <Button variant="outlined" type='submit'>
           Let's talk
         </Button>
 
@@ -85,7 +110,7 @@ using the suggestion box on the right.</Typography>
       </Stack>
       <Stack display='flex' flexDirection='row' gap={3} my={3} alignItems='center'>
 <img src={phone} alt='phone number' height='20px' width='20px'/>
-<Typography variant='h6' fontFamily='karma'>+254799820376</Typography>
+<Typography  fontFamily='karma'>+254799820376</Typography>
 
       </Stack>
     </Box>
