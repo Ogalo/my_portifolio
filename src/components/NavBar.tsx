@@ -12,12 +12,14 @@ import {
 import { useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import Logo from "../assests/Logo.svg";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 
-const pages = ["Home", "About", "Blog", "Services", "Experience", "Contact"];
+
 
 function NavBar() {
+  const navigate = useNavigate();
+
   const [anchorElNav, setAnchorElNav] = useState<null | HTMLElement>(null);
 
 
@@ -28,6 +30,7 @@ function NavBar() {
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
+
 
 
 
@@ -89,19 +92,31 @@ function NavBar() {
               sx={{
                 display: { xs: "block", md: "none" },
               }}
+
             >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+
+                <MenuItem >
+                  <Typography key='about' textAlign="center">ABOUT</Typography>
                 </MenuItem>
-              ))}
+                <MenuItem >
+                  <Typography key='blog' textAlign="center">BLOG</Typography>
+                </MenuItem>
+                <MenuItem >
+                  <Typography key='services' textAlign="center">SERVICES</Typography>
+                </MenuItem>
+                <MenuItem >
+                  <Typography key='experience' textAlign="center">EXPERIENCE</Typography>
+                </MenuItem>
+                <MenuItem >
+                  <Button  key='contact' variant='contained'>CONTACT</Button>
+                </MenuItem>
+
             </Menu>
           </Box>
 
           <Box sx={{ flexGrow: 1, display: { xs: "none", lg: "flex" }, ml: 75}}>
-            {pages.map((page) => (
-              <Button
-                key={page}
+
+               <Button
                 onClick={handleCloseNavMenu}
                 sx={{
                   my: 6,
@@ -110,9 +125,53 @@ function NavBar() {
                   fontFamily: "karma",
                 }}
               >
-                {page}
+                ABOUT
               </Button>
-            ))}
+              <Button
+                onClick={handleCloseNavMenu}
+                sx={{
+                  my: 6,
+                  color: "white",
+                  display: "block",
+                  fontFamily: "karma",
+                }}
+              >
+                BLOG
+              </Button>
+              <Button
+                onClick={handleCloseNavMenu}
+                sx={{
+                  my: 6,
+                  color: "white",
+                  display: "block",
+                  fontFamily: "karma",
+                }}
+              >
+                SERVICES
+              </Button>
+              <Button
+                onClick={handleCloseNavMenu}
+                sx={{
+                  my: 6,
+                  color: "white",
+                  display: "block",
+                  fontFamily: "karma",
+                }}
+              >
+                EXPERIENCE
+              </Button>
+              <Button
+                onClick={handleCloseNavMenu}
+                sx={{
+                  my: 6,
+                  color: "white",
+                  display: "block",
+                  fontFamily: "karma",
+                }}
+              >
+                CONTACT
+              </Button>
+
           </Box>
 
 
