@@ -55,19 +55,21 @@ const Bio = () => {
 
           </Stack>
           <Stack my={2} py={2}>
-          <Button sx={{width:'180px', }} variant="contained" href="#contained-buttons">
-            Get to Know me
+          <Button sx={{width:'180px', borderBottom: 2, }} href="https://calendly.com/otienoharrison95/30min">
+            Schedule a meeting
           </Button>
           </Stack>
         </Box>
 
 
           <Stack
+          mt={-4}
          >
           <Card
           sx={{
             maxWidth: "550px",
             backgroundColor: "#111835",
+            mt: 2,
           }}
         >
           <CardMedia>
