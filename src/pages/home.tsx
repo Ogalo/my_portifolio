@@ -6,13 +6,13 @@ import { Services , Tech, Portifolio, About, Bio, NavBar, Contact, Footer } from
 const Home = () => {
 
     return (
-        <Box>
+        <Box className="App">
           <NavBar />
           <Bio />
           <About />
           <Portifolio />
           <Tech />
-          < Services />
+          <Services />
           <Contact />
           <Footer />
 
