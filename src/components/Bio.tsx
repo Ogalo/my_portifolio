@@ -4,6 +4,17 @@ import Profile from "../assests/Profile.png";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 
 const Bio = () => {
+
+  const onButtonClick = () => {
+    const pdfUrl = "Resume.pdf";
+    const link = document.createElement("a");
+    link.href = pdfUrl;
+    link.download = "Resume.pdf"; // specify the filename
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+};
+
   const [typeEffect] = useTypewriter({
     words: [
       "Full-Stack MERN Developer!",
@@ -55,9 +66,12 @@ const Bio = () => {
 
           </Stack>
           <Stack my={2} py={2}>
-          <Button sx={{width:'180px', borderBottom: 2, }} href="https://calendly.com/otienoharrison95/30min">
-            Schedule a meeting
-          </Button>
+          <Button
+            sx={{borderBottom: 2, width: '170px' }}
+            onClick={onButtonClick}
+           >
+       Download Resume
+      </Button>
           </Stack>
         </Box>
 
