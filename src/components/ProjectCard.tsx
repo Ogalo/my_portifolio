@@ -12,6 +12,8 @@ import DashPro from "../assests/dashPro.png";
 import bomaPro from "../assests/bomaPro.png";
 import Figma from '../assests/figma.svg';
 import workflow from '../assests/workflow.svg'
+import { NavLink, useNavigate } from "react-router-dom";
+
 
 const ProjectCard = () => {
   return (
@@ -177,7 +179,10 @@ const ProjectCard = () => {
       </Stack>
 
       <Stack my={5} alignItems="center">
-        <Button variant="contained">View All</Button>
+        <Button variant="contained"><NavLink to='/projects' style={({ isActive }) => ({
+                  color: isActive ? 'grey' : '#ffffff',
+                  textDecoration: 'none'
+                })}>View All</NavLink></Button>
       </Stack>
     </Box>
   );
