@@ -45,13 +45,13 @@ function NavBar() {
               px: 1,
               flexDirection: "row",
               alignItems: 'center',
-              gap: 2,
+              gap: 1,
             }}
           >
-            <Stack onClick={()=>navigate('#')}>
+            <Stack onClick={()=>navigate('/')}>
               <img src={Logo} alt="Logo" width="80 px" height="55 px" />
             </Stack>
-            <Stack onClick={()=>navigate('#')} >
+            <Stack onClick={()=>navigate('/')} >
               <Typography variant="h4" sx={{cursor:'pointer'}}fontFamily='karma'>Harrison</Typography>
             </Stack>
           </Stack>
