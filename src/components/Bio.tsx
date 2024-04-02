@@ -4,7 +4,6 @@ import Profile from "../assests/Profile.png";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 
 const Bio = () => {
-
   const onButtonClick = () => {
     const pdfUrl = "Resume.pdf";
     const link = document.createElement("a");
@@ -13,7 +12,7 @@ const Bio = () => {
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
-};
+  };
 
   const [typeEffect] = useTypewriter({
     words: [
@@ -30,56 +29,50 @@ const Bio = () => {
 
   return (
     <Box
-    display='flex'
-    flexDirection='row'
-    flexWrap='wrap'
-    flex={1}
-    my={5}
-    px={5}
-    py={4}
-    gap={1}
-    justifyContent='space-between'
-
+      display="flex"
+      flexDirection="row"
+      flexWrap="wrap"
+      flex={1}
+      my={5}
+      px={5}
+      py={4}
+      gap={1}
+      justifyContent="space-between"
     >
-
-        <Box
-        display='flex'
-        flexDirection='column'
-        flex={1}
-        >
-          <Stack>
-            <Typography variant="h3" color="#cec5c5" fontFamily="karma">
-              I'm Harrison Otieno,
-            </Typography>
-          </Stack>
-          <Stack mt={2}>
-            <Typography
-              variant="h4"
-              fontFamily="karma"
-              sx={{ fontWeight: "700px" }}
-            >
-              A {typeEffect}
-            </Typography>
-          </Stack>
-          <Stack my={2}>
-          <Typography fontFamily='karma' width='90%' mt={3}>I am a rare combo, with a unique blend of skills ranging from Design, Web development, and analytics. I'm the guy you want in your team.</Typography>
-
-          </Stack>
-          <Stack my={2} py={2}>
+      <Box display="flex" flexDirection="column" flex={1}>
+        <Stack>
+          <Typography variant="h3" color="#cec5c5" fontFamily="karma">
+            I'm Harrison Otieno,
+          </Typography>
+        </Stack>
+        <Stack mt={2}>
+          <Typography
+            variant="h4"
+            fontFamily="karma"
+            sx={{ fontWeight: "700px" }}
+          >
+            A {typeEffect}
+          </Typography>
+        </Stack>
+        <Stack my={2}>
+          <Typography fontFamily="karma" width="90%" mt={3}>
+            I am a rare combo, with a unique blend of skills ranging from
+            Design, Web development, and analytics. I'm the guy you want in your
+            team.
+          </Typography>
+        </Stack>
+        <Stack my={2} py={2}>
           <Button
-            sx={{borderBottom: 2, width: '170px' }}
+            sx={{ borderBottom: 2, width: "170px" }}
             onClick={onButtonClick}
-           >
-       Download Resume
-      </Button>
-          </Stack>
-        </Box>
+          >
+            Download Resume
+          </Button>
+        </Stack>
+      </Box>
 
-
-          <Stack
-          mt={-4}
-         >
-          <Card
+      <Stack mt={-4}>
+        <Card
           sx={{
             maxWidth: "550px",
             backgroundColor: "#111835",
@@ -87,18 +80,10 @@ const Bio = () => {
           }}
         >
           <CardMedia>
-
-            <img  width='100%' src={Profile} alt="Profile Image"  />
-
-
+            <img width="100%" src={Profile} alt="Profile Image" />
           </CardMedia>
         </Card>
-
-
-
-          </Stack>
-
-
+      </Stack>
     </Box>
   );
 };
