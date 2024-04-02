@@ -1,4 +1,3 @@
-import React from "react";
 import { Typography, Stack, Box } from "@mui/material";
 import DashPro from "../assests/Rectangle5.svg";
 import Iphone from "../assests/AppleClone.png";
@@ -24,7 +23,9 @@ const Projects = () => {
           gap={6}
         >
           <Stack sx={{ width: { xs: "100%", lg: "48%" } }} boxShadow={10}>
-            <img src={DashPro} width="100%" />
+            <a href="https://admin-dashboard197.netlify.app/">
+              <img src={DashPro} alt="dash pro" width="100%" />
+            </a>
             <Stack p={1}>
               <Typography
                 variant="h5"
@@ -44,7 +45,10 @@ const Projects = () => {
             </Stack>
           </Stack>
           <Stack sx={{ width: { xs: "100%", lg: "48%" } }} boxShadow={10}>
-            <img src={Iphone} width="100%" />
+
+            <a href="https://apple15clone.netlify.app/">
+             <img src={Iphone} width="100%" />
+            </a>
             <Stack p={1}>
               <Typography
                 variant="h5"
@@ -61,7 +65,9 @@ const Projects = () => {
             </Stack>
           </Stack>
           <Stack sx={{ width: { xs: "100%", lg: "48%" } }} boxShadow={10}>
-            <img src={Boma} width="100%" />
+              <a href="https://bomaproject.netlify.app/">
+                <img src={Boma} alt="boma pro" width="100%" />
+              </a>
             <Stack p={1}>
               <Typography
                 variant="h5"
@@ -82,7 +88,10 @@ const Projects = () => {
             </Stack>
           </Stack>
           <Stack sx={{ width: { xs: "100%", lg: "48%" } }} boxShadow={10}>
-            <img src={Safe} width="100%" />
+              <a href="https://www.figma.com/file/05WTgL38p3Xv0qUFlpOs8i/Safe-symptoms-search?type=design&node-id=0%3A1&mode=design&t=48fzwLtCzSt9FGGs-1">
+              <img src={Safe} width="100%" />
+              </a>
+
             <Stack p={1}>
               <Typography
                 variant="h5"
