@@ -11,8 +11,8 @@ import {
 } from "@mui/material";
 import { useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
-import Logo from "../assests/Logo.svg";
-import { Link, useNavigate, NavLink } from "react-router-dom";
+import Logo from "../assests/Harrison logo.png";
+import { useNavigate, NavLink } from "react-router-dom";
 
 
 
@@ -49,11 +49,9 @@ function NavBar() {
             }}
           >
             <Stack onClick={()=>navigate('/')}>
-              <img src={Logo} alt="Logo" width="80 px" height="55 px" />
+              <img src={Logo} alt="Logo" width="200 px" height={180} />
             </Stack>
-            <Stack onClick={()=>navigate('/')} >
-              <Typography variant="h4" sx={{cursor:'pointer'}}fontFamily='karma'>Harrison</Typography>
-            </Stack>
+
           </Stack>
 
           <Box
