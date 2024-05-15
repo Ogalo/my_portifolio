@@ -12,10 +12,12 @@ import DashPro from "../assests/dashPro.png";
 import bomaPro from "../assests/bomaPro.png";
 import Figma from '../assests/figma.svg';
 import workflow from '../assests/workflow.svg'
+import assemble from '../assests/assemble.png'
 import { NavLink, useNavigate } from "react-router-dom";
+import ProjectCardType from "./ProjectCardType";
 
 
-const ProjectCard = () => {
+const ProjectCard = ({}) => {
   return (
     <Box
       display="flex"
@@ -55,8 +57,11 @@ const ProjectCard = () => {
           </Stack>
           <Stack my={2}>
             <a href='https://github.com/Ogalo/dashboard_pro'>
-            <GitHubIcon />
-            <Typography>View code</Typography>
+            <Stack display="flex" flexDirection="row" gap={2}>
+                 <GitHubIcon />
+                 <Typography>View code</Typography>
+
+                </Stack>
 
             </a>
           </Stack>
@@ -126,8 +131,11 @@ const ProjectCard = () => {
           </Stack>
           <Stack my={2}>
           <a href='https://github.com/Ogalo/Properties'>
-            <GitHubIcon />
-            <Typography>View code</Typography>
+          <Stack display="flex" flexDirection="row" gap={2}>
+                 <GitHubIcon />
+                 <Typography>View code</Typography>
+
+                </Stack>
             </a>
           </Stack>
         </Stack>
@@ -157,8 +165,12 @@ const ProjectCard = () => {
           </Stack>
           <Stack my={2}>
             <a href='https://www.figma.com/file/CC2sm43wNbfFPAtMQ0vXQd/INV-Figma%3A-Findigs---McKinley-UaaS-Mechanics-%5BVersion-1.0-Feb%5D?type=whiteboard&node-id=0%3A1&t=Ea7XSRP6ujrEAuR2-1'>
+            <Stack display="flex" flexDirection="row" gap={2}>
+
             <img src={Figma} alt='Figma' width='30px' />
             <Typography>View Design</Typography>
+
+                </Stack>
 
             </a>
           </Stack>
@@ -184,6 +196,7 @@ const ProjectCard = () => {
                   textDecoration: 'none'
                 })}>View All</NavLink></Button>
       </Stack>
+
     </Box>
   );
 };
