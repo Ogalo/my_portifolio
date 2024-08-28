@@ -5,6 +5,7 @@ import Assemble from "../assests/assemble.png";
 import Boma from "../assests/Rectangle8.svg";
 import Safe from "../assests/Symptoms.png";
 import Chronicles from "../assests/chronicles.png";
+import Eco from "../assests/Eco.png";
 import ProjectCardType from "../components/ProjectCardType";
 
 
@@ -69,6 +70,13 @@ const Projects = () => {
             link='https://66c57c543a9936d625d2320c--chroniclestrial.netlify.app/sign-in'
             img={Chronicles}
             code='https://github.com/Ogalo/chronicles'
+          />
+          <ProjectCardType
+            title='Kellyn Eco Safaris'
+            description='A tours and travel company website'
+            link='https://66c99942e2cd20000840172f--eco-safaris.netlify.app/'
+            img={Eco}
+            code='https://github.com/Ogalo/eco-kelly'
           />
           <ProjectCardType
             title='Safe Symptoms Search mobile design'
