@@ -4,7 +4,7 @@ import Iphone from "../assests/AppleClone.png";
 import Assemble from "../assests/assemble.png";
 import Boma from "../assests/Rectangle8.svg";
 import Safe from "../assests/Symptoms.png";
-import Chronicles from "../assests/chronicles.png";
+import Chronicles from "../assests/chronicles.jpg";
 import Eco from "../assests/Eco.png";
 import ProjectCardType from "../components/ProjectCardType";
 
