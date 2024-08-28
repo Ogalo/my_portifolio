@@ -4,6 +4,7 @@ import Iphone from "../assests/AppleClone.png";
 import Assemble from "../assests/assemble.png";
 import Boma from "../assests/Rectangle8.svg";
 import Safe from "../assests/Symptoms.png";
+import Chronicles from "../assests/chronicles.png";
 import ProjectCardType from "../components/ProjectCardType";
 
 
@@ -61,6 +62,13 @@ const Projects = () => {
             link='https://bomaproject.netlify.app/'
             img={Boma}
             code='https://github.com/Ogalo/Properties'
+          />
+          <ProjectCardType
+            title='Chronicles'
+            description='Chronicles—a platform designed to elevate our daily meditation discussions by providing a well-organized, feature-rich environment.'
+            link='https://66c57c543a9936d625d2320c--chroniclestrial.netlify.app/sign-in'
+            img={Chronicles}
+            code='https://github.com/Ogalo/chronicles'
           />
           <ProjectCardType
             title='Safe Symptoms Search mobile design'
