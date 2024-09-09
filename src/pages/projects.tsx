@@ -74,7 +74,7 @@ const Projects = () => {
           <ProjectCardType
             title='Kellyn Eco Safaris'
             description='A tours and travel company website'
-            link='https://66c99942e2cd20000840172f--eco-safaris.netlify.app/'
+            link='https://66df7b6cc8b38d00085348c7--eco-safaris.netlify.app/'
             img={Eco}
             code='https://github.com/Ogalo/eco-kelly'
           />
